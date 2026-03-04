@@ -15,7 +15,7 @@ public class mang1Chieu {
         a = new int[n];
 
         
-        int randomValue = (int)(Math.random()*100);
+        int randomValue = (int)(Math.random()*100);// gắn tất cả phần tử bằng cùng 1 số ngẫu nhiên
         for (int i =0; i < n;i++){
             a[i] = randomValue;  
         }
@@ -152,4 +152,5 @@ public class mang1Chieu {
 
         System.out.println("\nXONG!!!");
     }
+
 }
