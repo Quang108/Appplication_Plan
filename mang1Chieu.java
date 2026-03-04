@@ -127,7 +127,7 @@ public class mang1Chieu {
                 count++;
             }
         }
-        System.out.println("--> So luong so chan (sai): " + count);
+        System.out.println("--> So luong so chan: " + count);
     }
 
     public static void main(String[] args) {
@@ -154,6 +154,7 @@ public class mang1Chieu {
     }
 
 }
+
 
 
 
