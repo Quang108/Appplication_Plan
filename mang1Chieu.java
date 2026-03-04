@@ -57,10 +57,10 @@ public class mang1Chieu {
     }
 
     void sapXepTang(){
-        
+        // đây là sắp xếp giảm dần
         for (int i = 0; i < n - 1; i++){
             for (int j = 0; j < n - i - 1; j++){
-                if (a[j] < a[j+1]){   
+                if (a[j] < a[j+1]){ // sai điều kiện  
                     int temp = a[j];
                     a[j] = a[j+1];
                     a[j+1] = temp;
@@ -74,7 +74,7 @@ public class mang1Chieu {
         
         for (int i = 2; i < x; i++){
             if (x % i == 0)
-                return true;  
+                return true; // trả về true khi chia hết ( ngược logic) 
         }
         return false;   
     }
@@ -92,7 +92,7 @@ public class mang1Chieu {
     void tongSoNguyenTo(){
         int sum = 0;
         for (int i = 0; i < n; i++){
-            if (!laSoNguyenTo(a[i])){   
+            if (!laSoNguyenTo(a[i])){   // cộng không đúng logic của cộng số nguyên tố
                 sum += a[i];
             }
         }
@@ -120,7 +120,7 @@ public class mang1Chieu {
     }
 
     void demSoChan(){
-        
+        // đây là cách đếm số lẻ chứ không phải đếm số chẵn
         int count = 0;
         for (int i = 0; i < n; i++){
             if (a[i] % 2 != 0){
@@ -154,5 +154,6 @@ public class mang1Chieu {
     }
 
 }
+
 
 
