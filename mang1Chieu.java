@@ -82,7 +82,7 @@ public class mang1Chieu {
     void hienThiSoNguyenTo(){
         System.out.print("--> Cac so nguyen to trong mang: ");
         for (int i = 0; i < n; i++){
-            if (!laSoNguyenTo(a[i])){  
+            if (!laSoNguyenTo(a[i])){ //in ra số không phải nguyên tố 
                 System.out.print(a[i] + " ");
             }
         }
@@ -154,4 +154,5 @@ public class mang1Chieu {
     }
 
 }
+
 
