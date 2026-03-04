@@ -10,10 +10,7 @@ public class mang1Chieu_Fixed {
         System.out.print("- Nhap n phan tu trong mang: ");
         n = sc.nextInt();
         a = new int[n];
-        /*for (int i =0; i < a.length;i++){
-            System.out.print("- Nhap A[" + i + "]: ");
-            a[i] = sc.nextInt();
-        }*/
+        
         for (int i =0; i < n;i++){
             a[i] = (int)(Math.random()*100);
         }
@@ -115,3 +112,4 @@ public class mang1Chieu_Fixed {
         System.out.println("\nXONG!!!");
     }
 }
+
