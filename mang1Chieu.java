@@ -129,7 +129,7 @@ public class mang1Chieu {
         }
         System.out.println("--> So luong so chan: " + count);
     }
-
+    // Không có comment
     public static void main(String[] args) {
         mang1Chieu m = new mang1Chieu();
 
@@ -154,6 +154,7 @@ public class mang1Chieu {
     }
 
 }
+
 
 
 
