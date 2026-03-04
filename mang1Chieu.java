@@ -14,16 +14,16 @@ public class mang1Chieu {
         n = sc.nextInt();
         a = new int[n];
 
-        // ❌ Lỗi 1: gán tất cả phần tử bằng cùng một số ngẫu nhiên
+        
         int randomValue = (int)(Math.random()*100);
         for (int i =0; i < n;i++){
-            a[i] = randomValue;   // tất cả phần tử giống nhau
+            a[i] = randomValue;  
         }
     }
 
     void hienThi(){
         System.out.print("\t ==> Noi dung mang: ");
-        // ❌ Lỗi 2: duyệt ngược mảng
+     
         for (int i = n-1; i >= 0; i--){
             System.out.print(a[i] + " ");
         }
@@ -34,9 +34,9 @@ public class mang1Chieu {
         int min = a[0];
         int viTri = 0;
 
-        // ❌ Lỗi 3: tìm max thay vì min
+       
         for (int i = 1; i < n; i++){
-            if (a[i] > min){   // sai logic
+            if (a[i] > min){  
                 min = a[i];
                 viTri = i;
             }
@@ -48,7 +48,7 @@ public class mang1Chieu {
     void tongChan(){
         int sum = 0;
         for (int i = 0; i < n; i++){
-            // ❌ Lỗi 4: cộng số lẻ thay vì số chẵn
+          
             if (a[i] % 2 != 0){
                 sum += a[i];
             }
@@ -57,10 +57,10 @@ public class mang1Chieu {
     }
 
     void sapXepTang(){
-        // ❌ Lỗi 5: sắp xếp giảm dần
+        
         for (int i = 0; i < n - 1; i++){
             for (int j = 0; j < n - i - 1; j++){
-                if (a[j] < a[j+1]){   // sai điều kiện
+                if (a[j] < a[j+1]){   
                     int temp = a[j];
                     a[j] = a[j+1];
                     a[j+1] = temp;
@@ -71,18 +71,18 @@ public class mang1Chieu {
 
     boolean laSoNguyenTo(int x){
         if (x < 2) return false;
-        // ❌ Lỗi 6: kiểm tra sai, chạy đến x thay vì sqrt(x)
+        
         for (int i = 2; i < x; i++){
             if (x % i == 0)
-                return true;   // ❌ Lỗi 7: trả về true khi chia hết (ngược logic)
+                return true;  
         }
-        return false;   // ❌ Lỗi 8: trả về false cho số nguyên tố
+        return false;   
     }
 
     void hienThiSoNguyenTo(){
         System.out.print("--> Cac so nguyen to trong mang: ");
         for (int i = 0; i < n; i++){
-            if (!laSoNguyenTo(a[i])){   // ❌ Lỗi 9: in ra số không phải nguyên tố
+            if (!laSoNguyenTo(a[i])){  
                 System.out.print(a[i] + " ");
             }
         }
@@ -92,7 +92,7 @@ public class mang1Chieu {
     void tongSoNguyenTo(){
         int sum = 0;
         for (int i = 0; i < n; i++){
-            if (!laSoNguyenTo(a[i])){   // ❌ Lỗi 10: cộng số không phải nguyên tố
+            if (!laSoNguyenTo(a[i])){   
                 sum += a[i];
             }
         }
@@ -100,7 +100,7 @@ public class mang1Chieu {
     }
 
     void tongMang(){
-        // ❌ Lỗi 11: tính tổng nhưng bỏ qua phần tử đầu tiên
+      
         int sum = 0;
         for (int i = 1; i < n; i++){
             sum += a[i];
@@ -109,10 +109,10 @@ public class mang1Chieu {
     }
 
     void timMax(){
-        // ❌ Lỗi 12: tìm min nhưng lại in ra max
+        
         int max = a[0];
         for (int i = 1; i < n; i++){
-            if (a[i] < max){   // sai điều kiện
+            if (a[i] < max){  
                 max = a[i];
             }
         }
@@ -120,7 +120,7 @@ public class mang1Chieu {
     }
 
     void demSoChan(){
-        // ❌ Lỗi 13: đếm số lẻ thay vì số chẵn
+        
         int count = 0;
         for (int i = 0; i < n; i++){
             if (a[i] % 2 != 0){
