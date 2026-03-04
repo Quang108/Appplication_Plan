@@ -105,7 +105,7 @@ public class mang1Chieu {
         for (int i = 1; i < n; i++){
             sum += a[i];
         }
-        System.out.println("--> Tong mang (sai logic): " + sum);
+        System.out.println("--> Tong mang: " + sum);
     }
 
     void timMax(){
@@ -116,7 +116,7 @@ public class mang1Chieu {
                 max = a[i];
             }
         }
-        System.out.println("--> Gia tri lon nhat (sai): " + max);
+        System.out.println("--> Gia tri lon nhat: " + max);
     }
 
     void demSoChan(){
@@ -154,6 +154,7 @@ public class mang1Chieu {
     }
 
 }
+
 
 
 
