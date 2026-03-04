@@ -24,7 +24,7 @@ public class mang1Chieu {
     void hienThi(){
         System.out.print("\t ==> Noi dung mang: ");
      
-        for (int i = n-1; i >= 0; i--){
+        for (int i = n-1; i >= 0; i--){   //duyệt ngược mảng
             System.out.print(a[i] + " ");
         }
         System.out.println();
@@ -36,7 +36,7 @@ public class mang1Chieu {
 
        
         for (int i = 1; i < n; i++){
-            if (a[i] > min){  
+            if (a[i] > min){  // điều kiện a[i]>min sai logic tìm min -> a[i]<min
                 min = a[i];
                 viTri = i;
             }
@@ -49,7 +49,7 @@ public class mang1Chieu {
         int sum = 0;
         for (int i = 0; i < n; i++){
           
-            if (a[i] % 2 != 0){
+            if (a[i] % 2 != 0){  //điều kiện sai logic, tính tổng lẻ thay vì chẵn -> a[i]%2 == 0
                 sum += a[i];
             }
         }
@@ -76,7 +76,7 @@ public class mang1Chieu {
             if (x % i == 0)
                 return true; // trả về true khi chia hết ( ngược logic) 
         }
-        return false;   
+        return false;   // Dòng 77 và 79: trả về ngược logic
     }
 
     void hienThiSoNguyenTo(){
@@ -102,7 +102,7 @@ public class mang1Chieu {
     void tongMang(){
       
         int sum = 0;
-        for (int i = 1; i < n; i++){
+        for (int i = 1; i < n; i++){   //tính tổng nhưng bỏ qua phần tử đầu tiên (a[0])
             sum += a[i];
         }
         System.out.println("--> Tong mang: " + sum);
@@ -123,13 +123,14 @@ public class mang1Chieu {
         // đây là cách đếm số lẻ chứ không phải đếm số chẵn
         int count = 0;
         for (int i = 0; i < n; i++){
-            if (a[i] % 2 != 0){
+            if (a[i] % 2 != 0){   //sai logic, đếm số lẻ thay vì số chẵn
                 count++;
             }
         }
         System.out.println("--> So luong so chan: " + count);
     }
     // Không có comment
+    // Code chưa format, nhiều dòng trống không cần thiết
     public static void main(String[] args) {
         mang1Chieu m = new mang1Chieu();
 
@@ -154,6 +155,7 @@ public class mang1Chieu {
     }
 
 }
+
 
 
 
